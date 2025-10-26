@@ -28,3 +28,4 @@ Funcionalidades
 - Feedback de erros ou sucesso utilizando mensagens flash
 
 Para a incialização do projeto é preciso instalar as bibliotecas, no terminal inciar com *npm run dev* mas antes (tambpem mudar as configurações no package.json no “scripts“: { “dev“: “nodemon server.js“}).
+E no navegador: localhost:3000
