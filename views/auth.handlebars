@@ -1,0 +1,54 @@
+<header>
+{{#if error_msg}}
+  <div id="error-message" class="error">
+    {{error_msg}}
+  </div>
+{{/if}}
+{{#if success_msg}}
+<div id="success-message" class="success">
+    {{success_msg}}
+</div>
+{{/if}}
+  <form action="/auth/register" method="POST">
+     <div class="input-box2">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" placeholder="Digite seu nome">
+     </div>
+     <div class="input-box2">
+        <label for="email">Email:</label>
+        <input type="text" id="registerEmail" name="registerEmail" placeholder="Digite seu email">
+     </div>
+     <div class="input-box2">
+        <label for="password">Senha:</label>
+        <input type="password" id="registerPassword" name="registerPassword" placeholder="Digite sua senha">
+     </div>
+     <button type="submit">Cadastrar</button>
+  </form>
+  <form action="/auth/login" method="POST">
+     <div class="input-box">
+        <label for="email">Email:</label>
+        <input type="text" id="loginEmail" name="loginEmail" placeholder="Digite seu email">
+     </div>
+     <div class="input-box">
+        <label for="senha">Senha:</label>
+        <input type="password" id="loginPassword" name="loginPassword" placeholder="Digite sua senha">
+     </div>
+     <button type="submit">Entrar</button>
+  </form>
+</header>
+<script>
+    const message = document.getElementById('success-message');
+    if (message && message.classList.contains('success')) {
+        setTimeout(() => {
+            message.style.display = 'none';
+        }, 8000);
+    }
+</script>
+<script>
+   const errorMessage = document.getElementById(`error-message`);
+    if(errorMessage && errorMessage.classList.contains(`error`)) {
+        setTimeout(() => {
+            message.style.display = `none`;
+        }, 8000);
+    }
+</script>
