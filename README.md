@@ -6,7 +6,7 @@ O objetivo do projeto foi criar algo mais “complexo”, incluindo **cadastro/l
 Foram utilizadas as seguintes tecnologias e bibliotecas:  
 **Express**, **Express-Handlebars**, **Body-Parser**, **Sequelize**, **SQLite3**, **Connect-Flash**, **Express-Session** e **Bcrypt**.
 
-Tecnologias utilizadas
+bibliotecas utilizadas
 
 - Node.js  
 - Express  
@@ -16,7 +16,8 @@ Tecnologias utilizadas
 - SQLite3  
 - Connect-Flash  
 - Express-Session  
-- Bcrypt  
+- Bcrypt
+- Nodemon
 
 Funcionalidades
 
@@ -25,3 +26,5 @@ Funcionalidades
 - Perfil do usuário com informações pessoais como nome e email
 - Sessão de usuário com controle de login/logout  
 - Feedback de erros ou sucesso utilizando mensagens flash
+
+Para a incialização do projeto é preciso instalar as bibliotecas, no terminal inciar com *npm run dev* mas antes (tambpem mudar as configurações no package.json no “scripts“: { “dev“: “nodemon server.js“).
