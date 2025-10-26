@@ -27,4 +27,4 @@ Funcionalidades
 - Sessão de usuário com controle de login/logout  
 - Feedback de erros ou sucesso utilizando mensagens flash
 
-Para a incialização do projeto é preciso instalar as bibliotecas, no terminal inciar com *npm run dev* mas antes (tambpem mudar as configurações no package.json no “scripts“: { “dev“: “nodemon server.js“).
+Para a incialização do projeto é preciso instalar as bibliotecas, no terminal inciar com *npm run dev* mas antes (tambpem mudar as configurações no package.json no “scripts“: { “dev“: “nodemon server.js“}).
